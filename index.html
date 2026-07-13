@@ -3,32 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي</title>
+    <title>موقع الذكاء الاصطناعي الرسمي</title>
     <style>
-        body { font-family: Arial; text-align: center; background: #1877F2; padding: 20px; color: white; }
-        img { border-radius: 15px; margin: 10px; border: 3px solid white; }
-        h1 { color: white; }
-        .btn { padding: 12px 25px; border-radius: 10px; text-decoration: none; display: inline-block; margin: 10px; font-weight: bold; color: white; }
-        .whatsapp { background: #25D366; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Arial; 
+            background: #1877F2; 
+            color: white; 
+            text-align: center; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 50px 35px;
+            border-radius: 25px;
+            backdrop-filter: blur(12px);
+            max-width: 550px;
+            width: 90%;
+        }
+        .logo { 
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%; 
+            border: 5px solid white; 
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+        h1 { font-size: 32px; margin-bottom: 15px; }
+        .subtitle { font-size: 18px; margin-bottom: 20px; font-weight: 600; }
+        .desc { font-size: 16px; line-height: 1.8; margin-bottom: 35px; opacity: 0.95; }
+        .btn { 
+            padding: 15px 35px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            display: block; 
+            margin: 15px auto; 
+            font-weight: bold; 
+            font-size: 17px;
+            max-width: 320px;
+        }
+        .whatsapp { background: #25D366; color: white; }
         .facebook { background: white; color: #1877F2; }
+        footer { margin-top: 35px; font-size: 13px; opacity: 0.8; }
     </style>
 </head>
 <body>
-    <h1>مرحبا في موقعي</h1>
-    
-    <img src="me.jpg" width="200" style="border-radius: 50%;">
-    
-    <h2>صوري</h2>
-    <img src="me.jpg" width="250" style="border-radius: 10px;">
-    <p>هاي صورتي في الجامعة</p>
-    
-    <img src="bm.jpg" width="250" style="border-radius: 10px;">
-    <p>هاي الصورة الجديدة</p>
-    
-    <h2>تواصل معي</h2>
-    <a href="https://chat.whatsapp.com/BjOSRTKJQen9kyX10ygVhS?s=cl&p=a&ilr=4&amv=2" class="btn whatsapp">جروب الواتساب</a>
-    
-    <a href="https://www.facebook.com/profile.php?id=100073280197649" class="btn facebook">صفحة الفيسبوك</a>
-
+    <div class="container">
+        <img src="me.jpg" alt="صورتي" class="logo">
+        
+        <h1>اهلا بكم في موقعي</h1>
+        <p class="subtitle">موقع الذكاء الاصطناعي الرسمي</p>
+        
+        <p class="desc">
+            مرحبا بكم في عالم المستقبل 💡<br>
+            هنا نشارك معكم أحدث تقنيات الذكاء الاصطناعي والأدوات اللي بتسهل حياتك وتطور شغلك.<br>
+            انضم لعائلتنا وخليك دايما على اطلاع بكل جديد.
+        </p>
+        
+        <a href="https://chat.whatsapp.com/BjOSRTKJQen9kyX10ygVhS?s=cl&p=a&ilr=4&amv=2" class="btn whatsapp">انضم لجروب الواتساب</a>
+        
+        <a href="https://www.facebook.com/profile.php?id=100073280197649" class="btn facebook">تابعنا على الفيسبوك</a>
+        
+        <footer>© 2026 موقع الذكاء الاصطناعي الرسمي</footer>
+    </div>
 </body>
 </html>
